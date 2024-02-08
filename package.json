@@ -1,0 +1,26 @@
+{
+  "name": "library_management",
+  "version": "1.0.0",
+  "description": "This is the backend side of the library app",
+  "main": "index.js",
+  "scripts": {
+    
+    "client-install": "npm install --prefix cllient",
+    "server": "  nodemon server/server.js",
+    "client": "npm start --prefix cllient",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "nodemon server/server.js"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.6.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.1",
+    "nodemon": "^2.0.21"
+  }
+}
